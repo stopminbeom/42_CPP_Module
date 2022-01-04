@@ -5,19 +5,18 @@
 #                                                     +:+ +:+         +:+      #
 #    By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/01/03 18:16:26 by mseo              #+#    #+#              #
-#    Updated: 2022/01/04 13:41:04 by mseo             ###   ########.fr        #
+#    Created: 2022/01/04 22:45:47 by mseo              #+#    #+#              #
+#    Updated: 2022/01/04 23:10:19 by mseo             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	=	zombie
+NAME	=	ZombieHorde
 CC		=	c++
 CFLAGS	=	-Wall -Wextra -Werror
 
 SRC		=	main.cpp \
 			Zombie.cpp \
-			newZombie.cpp \
-			randomChump.cpp
+			ZombieHorde.cpp
 
 RM		=	rm -rf
 
