@@ -1,31 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.cpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/07 01:46:11 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/07 16:29:53 by mseo             ###   ########.fr       */
+/*   Created: 2022/01/08 17:51:40 by mseo              #+#    #+#             */
+/*   Updated: 2022/01/08 18:01:35 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
+#include "Karen.hpp"
 
-Weapon::Weapon(std::string weapon_type)
+int	main(void)
 {
-	this->type = weapon_type;
-};
+	Karen	k;
 
-std::string	Weapon::getType(void)
-{
-	if (type.empty())
-		return ("No weapon");
-	else
-		return (type);
-};
-
-void	Weapon::setType(std::string weapon_type)
-{
-	this->type = weapon_type;
+	k.complain("test");
+	k.complain("debug");
+	k.complain("error");
+	k.complain("info");
+	k.complain("warning");
+	k.complain("err");
+	k.complain("42");
+	k.complain("");
+	return 0;
 }

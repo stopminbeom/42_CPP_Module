@@ -6,23 +6,18 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/07 00:35:42 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/07 02:27:29 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/07 16:24:09 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanA.hpp"
 
-HumanA::HumanA(std::string Aname, Weapon &weapon)
+HumanA::HumanA(std::string Aname, Weapon &club):A_weapon(club)
 {
-	this->name = Aname;
-	this->A_weapon = weapon;
-};
-
-HumanA::~HumanA()
-{
+	name = Aname;
 };
 
 void	HumanA::attack(void)
 {
-	std::cout << this->name << " attacks with his " << std::endl;
+	std::cout << name << " attacks with his " << A_weapon.getType() << std::endl;
 };

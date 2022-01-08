@@ -5,16 +5,18 @@
 #                                                     +:+ +:+         +:+      #
 #    By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/01/07 16:32:44 by mseo              #+#    #+#              #
-#    Updated: 2022/01/08 00:43:17 by mseo             ###   ########.fr        #
+#    Created: 2022/01/08 01:13:46 by mseo              #+#    #+#              #
+#    Updated: 2022/01/08 18:43:31 by mseo             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	=	replace
+
+NAME	=	karenFilter
 CC		=	c++
 CFLAGS	=	-Wall -Wextra -Werror
 
-SRC		=	main.cpp
+SRC		=	main.cpp \
+			Karen.cpp
 
 RM		=	rm -rf
 
