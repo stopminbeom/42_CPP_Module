@@ -6,7 +6,7 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 15:40:51 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/14 15:01:32 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/14 16:16:09 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,26 +15,13 @@
 int	main(void)
 {
 	std::string PlayerA = "Sans";
-	std::string PlayerB = "Papyrus";
 	DiamondTrap	A(PlayerA);
-	// DiamondTrap	B;
-	
-	// B = DiamondTrap(PlayerB);
 
-	// A.attack(PlayerB);
-	// B.takeDamage(20);
-	// B.beRepaired(3);
-	// B.attack(PlayerA);
-	// A.takeDamage(30);
-	// A.beRepaired(10);
-
-	// A.guardGate();
-	// A.highFivesGuys();
-	// B.guardGate();
-	// B.highFivesGuys();
-
-	// A.whoAMI();
-	// B.whoAMI();
-	A.mystatus();
+	A.attack("Random people");
+	A.takeDamage(30);
+	A.beRepaired(10);
+	A.guardGate();
+	A.highFivesGuys();
+	A.whoAMI();
 	return 0;
 }
