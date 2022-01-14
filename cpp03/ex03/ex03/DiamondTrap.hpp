@@ -3,31 +3,34 @@
 /*                                                        :::      ::::::::   */
 /*   DiamondTrap.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
+/*   By: ylee <ylee@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/12 17:16:59 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/14 15:00:47 by mseo             ###   ########.fr       */
+/*   Created: 2022/01/06 18:53:38 by ylee              #+#    #+#             */
+/*   Updated: 2022/01/09 22:28:51 by ylee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "FragTrap.hpp"
-#include "ScavTrap.hpp"
 
 #ifndef DIAMONDTRAP_HPP
 # define DIAMONDTRAP_HPP
 
-class DiamondTrap : public FragTrap, public ScavTrap {
-	private:
-		std::string	DiaName;
-	public:
-		DiamondTrap();
-		DiamondTrap(std::string &n);
-		DiamondTrap(const DiamondTrap& obj);
-		~DiamondTrap();
-		DiamondTrap& operator=(const DiamondTrap& obj);
-		void	whoAMI();
-		void	attack(std::string const & target);
-		void	mystatus();
+# include "ScavTrap.hpp"
+# include "FragTrap.hpp"
+
+class	DiamondTrap : public ScavTrap, public FragTrap
+{
+private:
+	std::string	Name;
+public:
+	DiamondTrap();
+	DiamondTrap(const std::string& Name);
+	DiamondTrap(const DiamondTrap& otherObj);
+	~DiamondTrap();
+	DiamondTrap&	operator=(const DiamondTrap& otherObj);
+	void	attack(std::string const& target);
+	int		getHP();
+	int		getEP();
+	int		getAD();
+	void	whoAmI();
 };
 
 #endif

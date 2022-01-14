@@ -6,24 +6,25 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 16:52:46 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/14 14:09:06 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/14 15:38:44 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
 
-FragTrap::FragTrap() : ClapTrap() {
+FragTrap::FragTrap() {
 	// std::cout << "FragTrap defalut constructor called" << std::endl;
-	this->HP = 100;
-	this->EP = 100;
-	this->AD = 30;
+	HP = 100;
+	EP = 100;
+	AD = 30;
 }
 
-FragTrap::FragTrap(std::string &n) : ClapTrap(n) {
+FragTrap::FragTrap(std::string &n) {
 	// std::cout << "FragTrap constructor called with string" << std::endl;
-	this->HP = 100;
-	this->EP = 100;
-	this->AD = 30;
+	name = n;
+	HP = 100;
+	EP = 100;
+	AD = 30;
 }
 
 FragTrap::FragTrap(const FragTrap& obj) {

@@ -3,26 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
+/*   By: ylee <ylee@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/12 16:52:27 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/14 15:32:09 by mseo             ###   ########.fr       */
+/*   Created: 2022/01/06 18:53:38 by ylee              #+#    #+#             */
+/*   Updated: 2022/01/09 22:27:33 by ylee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
-
 #ifndef FRAGTRAP_HPP
-#define FRAGTRAP_HPP
+# define FRAGTRAP_HPP
 
-class FragTrap : virtual public ClapTrap {
-	public:
+# include "ClapTrap.hpp"
+
+class	FragTrap : virtual public ClapTrap
+{
+public:
 	FragTrap();
-	FragTrap(std::string &n);
-	FragTrap(const FragTrap& obj);
+	FragTrap(const std::string& Name);
+	FragTrap(const FragTrap& otherObj);
 	~FragTrap();
-	FragTrap& operator=(const FragTrap& obj);
-	void	highFivesGuys(void);
+	FragTrap&	operator=(const FragTrap& otherObj);
+	void	attack(std::string const& target);
+	void 	highFivesGuys(void);
 };
 
 #endif

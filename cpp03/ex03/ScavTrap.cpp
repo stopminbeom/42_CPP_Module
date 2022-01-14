@@ -6,24 +6,25 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 16:05:52 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/14 14:09:15 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/14 15:38:53 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 
-ScavTrap::ScavTrap() : ClapTrap() {
+ScavTrap::ScavTrap() {
 	// std::cout << "ScavTrap default constructor called" << std::endl;
-	this->HP = 100;
-	this->EP = 50;
-	this->AD = 20;
+	HP = 100;
+	EP = 50;
+	AD = 20;
 }
 
-ScavTrap::ScavTrap(std::string &n) : ClapTrap(n) {
+ScavTrap::ScavTrap(std::string &n) {
 	// std::cout << "ScavTrap constructor called with string" << std::endl;
-	this->HP = 100;
-	this->EP = 50;
-	this->AD = 20;
+	name = n;
+	HP = 100;
+	EP = 50;
+	AD = 20;
 }
 
 ScavTrap::ScavTrap(const ScavTrap& obj) {
