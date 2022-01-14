@@ -6,7 +6,7 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 14:51:51 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/12 18:36:13 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/14 14:08:37 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ ClapTrap::ClapTrap(const ClapTrap& obj) {
 }
 
 ClapTrap::~ClapTrap() {
-	std::cout << "ClapTrap " << name;
-	std::cout << " destructor called" << std::endl;
+	// std::cout << "ClapTrap " << name;
+	// std::cout << " destructor called" << std::endl;
 }
 
 ClapTrap& ClapTrap::operator=(const ClapTrap& obj) {

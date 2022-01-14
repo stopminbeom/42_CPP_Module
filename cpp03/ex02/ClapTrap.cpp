@@ -6,7 +6,7 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 14:51:51 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/12 16:45:44 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/14 14:05:10 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,8 +78,4 @@ void	ClapTrap::beRepaired(unsigned int amount) {
 	std::cout << "ClapTrap <" << name
 	<< "> is repaired <" << amount << "> points." << std::endl;
 	std::cout << name << "'s HP = " << HP << std::endl;
-}
-
-std::string	ClapTrap::getName() {
-	return name;
 }

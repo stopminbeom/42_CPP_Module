@@ -6,7 +6,7 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 16:52:46 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/12 18:34:29 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/14 14:09:06 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@ FragTrap::FragTrap(const FragTrap& obj) {
 }
 
 FragTrap::~FragTrap() {
-	std::cout << "FragTrap " << name;
-	std::cout << " destructor called" << std::endl;
+	// std::cout << "FragTrap " << name;
+	// std::cout << " destructor called" << std::endl;
 }
 
 FragTrap& FragTrap::operator=(const FragTrap& obj) {

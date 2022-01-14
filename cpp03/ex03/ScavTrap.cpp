@@ -6,7 +6,7 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 16:05:52 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/12 18:37:58 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/14 14:09:15 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@ ScavTrap::ScavTrap(const ScavTrap& obj) {
 }
 
 ScavTrap::~ScavTrap() {
-	std::cout << "ScavTrap " << name;
-	std::cout << " destructor called" << std::endl;
+	// std::cout << "ScavTrap " << name;
+	// std::cout << " destructor called" << std::endl;
 }
 
 ScavTrap& ScavTrap::operator=(const ScavTrap& obj) {
