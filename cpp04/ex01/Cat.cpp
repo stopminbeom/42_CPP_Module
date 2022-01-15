@@ -6,7 +6,7 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/14 20:31:22 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/15 17:49:54 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/15 21:54:58 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 Cat::Cat() {
 	std::cout << "<cat default> Hey, human. Give me that can!!" << std::endl;
 	type = "Cat";
+	c_brain = new Brain;
 }
 
 Cat::Cat(const Cat& obj) {
@@ -24,6 +25,7 @@ Cat::Cat(const Cat& obj) {
 
 Cat::~Cat() {
 	std::cout << "<cat destructor> Hey, human. Say goodbye" << std::endl;
+	delete c_brain;
 }
 
 Cat& Cat::operator=(const Cat& obj) {

@@ -6,20 +6,19 @@
 #    By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/14 20:19:48 by mseo              #+#    #+#              #
-#    Updated: 2022/01/15 17:37:28 by mseo             ###   ########.fr        #
+#    Updated: 2022/01/15 23:08:41 by mseo             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	Polymorphism
+NAME		=	Deep
 CXX			=	c++
 CXXFLAGS	=	-Wall -Wextra -Werror
 
 SRC			=	main.cpp \
+				Brain.cpp \
 				Animal.cpp \
 				Cat.cpp \
-				Dog.cpp \
-				WrongAnimal.cpp \
-				WrongCat.cpp
+				Dog.cpp
 
 RM			=	rm -rf
 

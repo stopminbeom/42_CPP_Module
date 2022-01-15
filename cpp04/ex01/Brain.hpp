@@ -6,7 +6,7 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/15 18:06:22 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/15 18:11:46 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/15 22:26:18 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <iostream>
 # include <string>
+# include <cstdlib>
 
 class Brain {
 	protected:

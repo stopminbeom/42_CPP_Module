@@ -6,7 +6,7 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/14 20:31:02 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/15 18:06:14 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/15 21:48:49 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,11 @@
 # define CAT_HPP
 
 # include "Animal.hpp"
+# include "Brain.hpp"
 
 class Cat : public Animal {
 	private:
-		
+		Brain	*c_brain;
 	public:
 		Cat();
 		Cat(const Cat& obj);

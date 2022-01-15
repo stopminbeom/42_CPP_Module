@@ -6,7 +6,7 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/14 20:33:25 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/15 17:49:27 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/15 21:54:14 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 Dog::Dog() {
 	std::cout << "<dog default> Hey, master! I want walk outside!!" << std::endl;
 	type = "Dog";
+	d_brain = new Brain;
 }
 
 Dog::Dog(const Dog& obj) {
@@ -24,6 +25,7 @@ Dog::Dog(const Dog& obj) {
 
 Dog::~Dog() {
 	std::cout << "<dog destructor> Hey, master... Say goodbye" << std::endl;
+	delete d_brain;
 }
 
 Dog& Dog::operator=(const Dog& obj) {

@@ -6,43 +6,42 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/14 20:20:45 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/15 17:51:41 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/15 23:08:11 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iomanip>
 #include <string>
-#include "WrongAnimal.hpp"
-#include "WrongCat.hpp"
 #include "Cat.hpp"
 #include "Dog.hpp"
 #include "Animal.hpp"
 
 int	main()
 {
-	const Animal*	meta = new Animal();
-	const Animal*	j = new Dog();
-	const Animal*	i = new Cat();
-	const WrongAnimal*	w = new WrongCat();
+	Animal *Ani[4];
+	for (int i = 0; i < 4; i++) {
+		if (i % 2 == 0) {
+			Ani[i] = new Dog();	
+		}
+		else {
+			Ani[i] = new Cat();
+		}
+	}
 
-	std::cout << "\n------- test Animal---------" << std::endl;
+	std::cout << "--------test 1 start----------" << std::endl;
+	
+	for (int i = 0; i < 4; i++) {
+		std::cout << Ani[i]->getType() << " : ";
+		Ani[i]->makeSound();
+	}
 
-	std::cout << j->getType() << " " << std::endl;
-	std::cout << i->getType() << " " << std::endl;
-	std::cout << meta->getType() << " " << std::endl;
+	Animal *test = Ani[2];
 
-	i->makeSound();
-	j->makeSound();
-	meta->makeSound();
-	std::cout << "\n----- test Wrong Animal-------" << std::endl;
-	std::cout << w->getType() << " " << std::endl;
-	w->makeSound();
-	std::cout << "\n----- test end-------" << std::endl;
+	std::cout << "--------test 1 end----------" << std::endl;
 
-	delete j;
-	delete i;
-	delete meta;
-	delete w;
+	for (int i = 0; i < 4; i++) {
+		delete Ani[i];
+	}
 
 	return 0;
 }
