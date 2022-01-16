@@ -6,7 +6,7 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/14 20:20:45 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/16 21:20:28 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/16 21:42:43 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,45 +16,13 @@
 
 int	main()
 {
-	Animal *Ani[4];
-	for (int i = 0; i < 4; i++) {
-		if (i % 2 == 0) {
-			Ani[i] = new Dog();	
-		}
-		else {
-			Ani[i] = new Cat();
-		}
-	}
+	Dog	d;
+	Cat c;
+	// Animal *test = new Animal;
+	// Animal test2;
 
-	std::cout << "--------test 1 start----------" << std::endl;
-	
-	for (int i = 0; i < 4; i++) {
-		std::cout << Ani[i]->getType() << " : ";
-		Ani[i]->makeSound();
-	}
-	
-	for (int i = 0; i < 4; i++) {
-		delete Ani[i];
-	}
-	std::cout << "--------test 1 end----------" << std::endl;
+	d.makeSound();
+	c.makeSound();
 
-	Dog test;
-	Dog	temp = test;
-
-	std::cout << "test : ";
-	test.showBrain();
-	std::cout << "temp : ";
-	temp.showBrain();
-
-	std::cout << "\nsetting brain" << std::endl;
-	test.resetBrain();
-
-	std::cout << "test : ";
-	test.showBrain();
-	std::cout << "temp : ";
-	temp.showBrain();
-	std::cout << "\ntesting end" << std::endl;
-	
-	system("leaks Deep");
 	return 0;
 }
