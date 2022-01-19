@@ -6,7 +6,7 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 17:06:27 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/19 18:41:01 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/19 19:20:09 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ class Form {
 		int			getExecGrade() const;
 		int			getSignGrade() const;
 		void		beSigned(Bureaucrat &b);
+		void		execute(Bureaucrat const & executor);
 		class GradeTooHighException : public std::exception {
 			public:
 				virtual const char *what() const throw() {

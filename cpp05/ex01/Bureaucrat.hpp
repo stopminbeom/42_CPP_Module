@@ -6,7 +6,7 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/16 22:40:53 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/18 17:28:48 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/19 18:40:58 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@
 # include <iostream>
 # include <string>
 # include <exception>
+# include "Form.hpp"
+
+class Form;
 
 class Bureaucrat {
 	private:
@@ -31,6 +34,7 @@ class Bureaucrat {
 		int			getGrade() const;
 		void		incGrade();
 		void		decGrade();
+		void		beSigned(Form &f);
 
 		class GradeTooHighException : public std::exception {
 			public:

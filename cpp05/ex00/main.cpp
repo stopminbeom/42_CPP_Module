@@ -6,11 +6,12 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 16:52:18 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/18 17:19:13 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/19 17:12:22 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Bureaucrat.hpp"
+
 void	testBasic(void)
 {
 	Bureaucrat	bob("bob", 3);
