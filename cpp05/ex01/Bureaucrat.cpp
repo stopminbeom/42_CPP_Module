@@ -6,7 +6,7 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/16 22:41:11 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/19 17:28:05 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/21 00:42:37 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ void	Bureaucrat::decGrade() {
 	grade++;
 }
 
-void	Bureaucrat::beSigned(Form &f)
+void	Bureaucrat::signForm(Form &f)
 {
 	try {
 		f.beSigned(*this);

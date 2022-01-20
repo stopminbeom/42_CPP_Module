@@ -6,7 +6,7 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 16:52:18 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/19 18:45:15 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/21 00:42:50 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ int	main(void)
 		std::cerr << e.what() << std::endl;
 	}
 
-	bob.beSigned(f);
+	bob.signForm(f);
 	bob.incGrade();
-	bob.beSigned(f);
+	bob.signForm(f);
 
 	std::cout << bob << std::endl;
 	std::cout << f << std::endl;

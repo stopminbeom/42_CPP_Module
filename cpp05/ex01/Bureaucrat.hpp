@@ -6,7 +6,7 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/16 22:40:53 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/19 18:40:58 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/21 00:42:33 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ class Bureaucrat {
 		int			getGrade() const;
 		void		incGrade();
 		void		decGrade();
-		void		beSigned(Form &f);
+		void		signForm(Form &f);
 
 		class GradeTooHighException : public std::exception {
 			public:
