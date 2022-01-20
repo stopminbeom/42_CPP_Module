@@ -6,7 +6,7 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 17:06:27 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/19 19:20:09 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/20 19:32:41 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,13 @@ class Form {
 					return "Form::exception : Bureaucrat Grade is too low";
 				}
 				virtual ~GradeTooLowException() throw() {}
+		};
+		class  NotSigned: public std::exception {
+			public:
+				virtual const char* what() const throw() {
+					return "Form::exception : This Form isn't signed";
+				}
+				virtual ~NotSigned() throw() {}
 		};
 };
 

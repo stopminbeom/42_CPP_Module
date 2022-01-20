@@ -6,7 +6,7 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 17:56:06 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/19 19:07:59 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/20 20:20:43 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,12 @@ class PresidentialPardonForm : public Form {
 		std::string	target;
 	public:
 		PresidentialPardonForm();
+		PresidentialPardonForm(std::string const n);
 		PresidentialPardonForm(const PresidentialPardonForm& obj);
 		PresidentialPardonForm& operator=(const PresidentialPardonForm& obj);
-		~PresidentialPardonForm();
+		virtual	~PresidentialPardonForm();
+		std::string	getTarget() const;
+		virtual	void	execute(Bureaucrat const & executor);
 };
 
 #endif

@@ -6,16 +6,19 @@
 #    By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/16 22:38:34 by mseo              #+#    #+#              #
-#    Updated: 2022/01/19 17:26:34 by mseo             ###   ########.fr        #
+#    Updated: 2022/01/20 20:27:10 by mseo             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	Form
+NAME		=	Forms
 CXX			=	c++
 CXXFLAGS	=	-Wall -Wextra -Werror
 
 SRC			=	Bureaucrat.cpp \
 				Form.cpp \
+				ShrubberyCreationForm.cpp \
+				RobotomyRequestForm.cpp \
+				PresidentialPardonForm.cpp \
 				main.cpp
 
 RM			=	rm -rf
