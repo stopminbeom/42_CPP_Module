@@ -6,7 +6,7 @@
 /*   By: mseo <mseo@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 16:52:18 by mseo              #+#    #+#             */
-/*   Updated: 2022/01/20 20:37:25 by mseo             ###   ########.fr       */
+/*   Updated: 2022/01/21 22:24:55 by mseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	main(void)
 	PresidentialPardonForm	pre("Zafod");
 
 	std::cout << "test Shurbbery form" << std::endl;
-	bob.beSigned(tree);
+	bob.signForm(tree);
 	try {
 		tree.execute(bob);
 		tree.execute(mseo);
@@ -35,7 +35,7 @@ int	main(void)
 	
 	std::cout << "test Robotomy form" << std::endl;
 
-	bob.beSigned(tom);
+	bob.signForm(tom);
 	try {
 		tom.execute(bob);
 		tom.execute(mseo);
@@ -46,7 +46,7 @@ int	main(void)
 
 	std::cout << "test Presidential~ form" << std::endl; 
 
-	bob.beSigned(pre);
+	bob.signForm(pre);
 	try {
 		pre.execute(bob);
 		pre.execute(mseo);
